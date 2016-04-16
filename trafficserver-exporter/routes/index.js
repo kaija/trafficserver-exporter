@@ -28,6 +28,7 @@ router.get('/metrics', function(req, res, next) {
           }
         }
       }
+      res.set('Content-Type', 'text/plain');
       res.send(output);
     }
   });
